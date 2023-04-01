@@ -150,7 +150,7 @@ function ascend() {
 function update() {
 	//scale the gain by the actual number of seconds since the last update
 	const curTime = (new Date()).getTime();
-	const deltaTime = data.timemult * ((data.lastTime === undefined) ? 1 : ((curTime - data.lastTime) / 1000));
+	const deltaTime = (data.lastTime === undefined) ? 1 : ((curTime - data.lastTime) / 1000);
 	data.lastTime = curTime;
 	data.coins += getGain() * deltaTime;
 	if (data.coins > 1e308) data.coins = 1e308
