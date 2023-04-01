@@ -34,9 +34,7 @@ function getRequirement(id) {
 }
 
 function canActivatePrestige(id) {
-	if (id < data.auto) {
-		return false;
-	} if (id === 0) {
+	if (id === 0) {
 		return (data.coins >= getRequirement(0));
 	} else if (id === 1) {
 		return (data.prestiges[id - 1] + data.permananos >= getRequirement(id));
