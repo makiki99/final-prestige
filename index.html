@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+	<title>Prestige Final Edition</title>
+	<script src="main.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="logo_container">
+		<h1 class="logo">PRESTIGE </h1>
+		<h4 class="logo">FINAL EDITION</h4>
+	</div>
+	<div>
+		<h1><span id="coins">0</span> coins</h1>
+		<h3><span id="gain">0</span> coins/second</h3>
+	</div>
+	<hr/>
+	<table>
+		<tr class="t1">
+			<th><div class="unskew">Tier</div></th>
+			<th><div class="unskew">Name</div></th>
+			<th><div id="requirement_col" class="unskew">Requirement</div></th>
+			<th><div class="unskew">Amount</div></th>
+			<th><div class="unskew">Effect</div></th>
+		</tr class="t2">
+		<tr>
+			<td><div class="unskew">I</div></td>
+			<td><div class="unskew">Nanoprestige</div></td>
+			<td><div class="unskew"><span id="tier1cost">100</span> coins</div></td>
+			<td><div class="unskew"><span id="tier1a">0</span></div></td>
+			<td><div class="unskew"><span id="tier1mul">x1</span></div></td>
+			<td><button id="tier1btn"><div class="unskew" id="tier1btn_text">Activate</div></button></td>
+		</tr>
+		<tr class="t3">
+			<td><div class="unskew">II</div></td>
+			<td><div class="unskew">Microprestige</div></td>
+			<td><div class="unskew"><span id="tier2cost">2</span>x Tier I</div></td>
+			<td><div class="unskew"><span id="tier2a">0</span></div></td>
+			<td><div class="unskew"><span id="tier2mul">x1</span></div></td>
+			<td><button id="tier2btn"><div class="unskew" id="tier2btn_text">Activate</div></button></td>
+		</tr>
+		<tr class="t4">
+			<td><div class="unskew">III</div></td>
+			<td><div class="unskew">Miniprestige</div></td>
+			<td><div class="unskew"><span id="tier3cost">3</span>x Tier II</div></td>
+			<td><div class="unskew"><span id="tier3a">0</span></div></td>
+			<td><div class="unskew"><span id="tier3mul">x1</span></div></td>
+			<td><button id="tier3btn"><div class="unskew" id="tier3btn_text">Activate</div></button></td>
+		</tr>
+		<tr class="t5">
+			<td><div class="unskew">IV</div></td>
+			<td><div class="unskew">Small Prestige</div></td>
+			<td><div class="unskew"><span id="tier4cost">4</span>x Tier III</div></td>
+			<td><div class="unskew"><span id="tier4a">0</span></div></td>
+			<td><div class="unskew"><span id="tier4mul">x1</span></div></td>
+			<td><button id="tier4btn"><div class="unskew" id="tier4btn_text">Activate</div></button></td>
+		<tr class="t6">
+			<td><div class="unskew">V</div></td>
+			<td><div class="unskew">Partial Prestige</div></td>
+			<td><div class="unskew"><span id="tier5cost">5</span>x Tier IV</div></td>
+			<td><div class="unskew"><span id="tier5a">0</span></div></td>
+			<td><div class="unskew"><span id="tier5mul">x1</span></div></td>
+			<td><button id="tier5btn"><div class="unskew" id="tier5btn_text">Activate</div></button></td>
+		</tr>
+		<tr class="t7">
+			<td><div class="unskew">VI</div></td>
+			<td><div class="unskew">Full Prestige</div></td>
+			<td><div class="unskew"><span id="tier6cost">6</span>x Tier V</div></td>
+			<td><div class="unskew"><span id="tier6a">0</span></div></td>
+			<td><div class="unskew"><span id="tier6mul">x1</span></div></td>
+			<td><button id="tier6btn"><div class="unskew" id="tier6btn_text">Activate</div></button></td>
+		</tr>
+		<tr class="t8">
+			<td><div class="unskew">VII</div></td>
+			<td><div class="unskew">Multiprestige</div></td>
+			<td><div class="unskew"><span id="tier7cost">7</span>x Tier VI</div></td>
+			<td><div class="unskew"><span id="tier7a">0</span></div></td>
+			<td><div class="unskew"><span id="tier7mul">x1</span></div></td>
+			<td><button id="tier7btn"><div class="unskew" id="tier7btn_text">Activate</div></button></td>
+		</tr>
+		<tr class="t9">
+			<td><div class="unskew">VIII</div></td>
+			<td><div class="unskew">Hyperprestige</div></td>
+			<td><div class="unskew"><span id="tier8cost">8</span>x Tier VII</div></td>
+			<td><div class="unskew"><span id="tier8a">0</span></div></td>
+			<td><div class="unskew"><span id="tier8mul">x1</span></div></td>
+			<td><button id="tier8btn"><div class="unskew" id="tier8btn_text">Activate</div></button></td>
+		</tr>
+		<tr class="t10">
+			<td><div class="unskew">IX</div></td>
+			<td><div class="unskew">Ultraprestige</div></td>
+			<td><div class="unskew"><span id="tier9cost">9</span>x Tier VIII</div></td>
+			<td><div class="unskew"><span id="tier9a">0</span></div></td>
+			<td><div class="unskew"><span id="tier9mul">x1</span></div></td>
+			<td><button id="tier9btn"><div class="unskew" id="tier9btn_text">Activate</div></button></td>
+		</tr>
+		<tr class="t10">
+			<td><div class="unskew">X</div></td>
+			<td><div class="unskew">Final Prestige</div></td>
+			<td><div class="unskew"><span id="tier10cost">10</span>x Tier IX</div></td>
+			<td><div class="unskew"><span id="tier10a">0</span></div></td>
+			<td><div class="unskew"><span id="tier10mul">x1</span></div></td>
+			<td><button id="tier10btn"><div class="unskew" id="tier10btn_text">Activate</div></button></td>
+		</tr>
+	</table>
+	<hr/>
+	<table>
+		<tr id="reset1row" style="display:none">
+			<td><div class="unskew">Requires tier III</div></td>
+			<td><div class="unskew">Reset the game, but retain 90% of your income</div></td>
+			<td><button id="reset1btn"><div class="unskew">Activate</div></button></td>
+		</tr>
+		<tr id="reset2row" style="display:none">
+			<td><div class="unskew">Requires <span id="scaledown_cost">?</span> coins</div></td>
+			<td><div class="unskew">Reset the game, but reduce the requirements</div></td>
+			<td><button id="reset2btn"><div class="unskew">Activate</div></button></td>
+		</tr>
+		<tr id="reset3row" style="display:none">
+			<td><div class="unskew">Requires tier IV</div></td>
+			<td><div class="unskew">Reset the game but permanently retain nanoprestiges</div></td>
+			<td><button id="reset3btn"><div class="unskew">Activate</div></button></td>
+		</tr>
+		<tr id="reset4row" style="display:none">
+			<td><div class="unskew">Requires 10x tier <span id="reset4tier"></span></div></td>
+			<td><div class="unskew">Reset the game but automatically gain prestiges</div></td>
+			<td><button id="reset4btn"><div class="unskew">Activate</div></button></td>
+		</tr>
+		<tr id="reset5row" style="display:none">
+			<td><div class="unskew">Requires <span id="reset5cost">1</span>x tier X</div></td>
+			<td><div class="unskew">Hard reset the game but boost the original <a href="https://makiki99.github.io/prestige/">Prestige Clicker</a></div></td>
+			<td><button id="reset5btn"><div class="unskew">Activate</div></button></td>
+		</tr>
+	</table>
+</body>
+</html>
