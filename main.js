@@ -183,12 +183,12 @@ function draw() {
 	} else {
 		document.getElementById("reset2row").style.display = "none"
 	}
-	if (data.prestiges[3]>0) {
+	if (data.prestiges[3]>0 || data.permananos>0) {
 		document.getElementById("reset3row").style.display = "table-row"
 	} else {
 		document.getElementById("reset3row").style.display = "none"
 	}
-	if (data.prestiges[0]>50 && data.auto <10) {
+	if (data.prestiges[0]+data.permananos>50 && data.auto <10) {
 		document.getElementById("reset4row").style.display = "table-row"
 	} else {
 		document.getElementById("reset4row").style.display = "none"
