@@ -111,7 +111,7 @@ function resetPermaNano() {
 
 function canResetAutomate() {
 	if (data.auto > 9) return false;
-	if (data.auto == 0) return data.prestiges[data.auto] + data.permananos > 100;
+	if (data.auto == 0) return data.prestiges[data.auto] + data.permananos > 10;
 	return data.prestiges[data.auto] >= 10;
 }
 
